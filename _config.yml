@@ -54,9 +54,6 @@ author:
   bio: "Software Engineer" # Note: Markdown is allowed
   location: "Tokyo"
   links:
-    # - label: "Made Mistakes"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://mademistakes.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/renatosugimoto"

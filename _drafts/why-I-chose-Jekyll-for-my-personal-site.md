@@ -1,5 +1,7 @@
 ---
-published: false
+title: "Why I chose Jekyll for my personal site"
+date: 2021-05-03 16:15:29 +0900
+categories: jekyll update
 ---
 Why I decided to create my own blog with Jekyll instead of using popular platforms like Medium, Dev.to, or Hackernoon.
 
