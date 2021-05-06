@@ -2,8 +2,10 @@
 title: "Why I chose Jekyll for my personal site"
 excerpt: Why I decided to create my own blog on Github Pages with Jekyll instead of using popular platforms like Medium, Dev.to, or Hackernoon.
 date: 2021-05-06 15:15:29 +0900
-categories: jekyll update
+tags: jekyll publishing
 ---
+![Jekyll logo](/assets/images/jekyll.png)
+
 *Why I decided to create my own blog on Github Pages with Jekyll instead of using popular platforms like Medium, Dev.to, or Hackernoon.*
 
 When I first came up with the idea of creating a blog, Medium seemed the right choice. Popular platform, no concerns about hosting or configuration. I could just start writing.
