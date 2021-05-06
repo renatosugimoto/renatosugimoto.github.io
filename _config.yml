@@ -75,7 +75,7 @@ analytics:
   provider: "google"
   google:
     tracking_id: "G-142E8GCRQR"
-    anonymize_ip: false # default
+    anonymize_ip: true
 
 timezone: Asia/Tokyo
 
