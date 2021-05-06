@@ -72,7 +72,7 @@ social:
     - "https://www.linkedin.com/in/RenatoSugimoto"
 
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-142E8GCRQR"
     anonymize_ip: true
