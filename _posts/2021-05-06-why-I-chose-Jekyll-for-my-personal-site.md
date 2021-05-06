@@ -3,6 +3,7 @@ title: "Why I chose Jekyll for my personal site"
 excerpt: Why I decided to create my own blog on Github Pages with Jekyll instead of using popular platforms like Medium, Dev.to, or Hackernoon.
 date: 2021-05-06 15:15:29 +0900
 tags: jekyll publishing
+og_image: /assets/images/jekyll.png
 ---
 ![Jekyll logo](/assets/images/jekyll.png)
 
