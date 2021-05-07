@@ -11,9 +11,9 @@ og_image: /assets/images/jekyll.png
 
 When I first came up with the idea of creating a blog, Medium seemed the right choice. Popular platform, no concerns about hosting or configuration. I could just start writing.
 
-But I stopped for a moment, and decided to do a little research on Medium. And I found some concerns about the paywall, user tracking, and other issues. This already made me rethink the idea.
+But I stopped for a moment and decided to do a little research on Medium. And I found some concerns about the paywall, user tracking, and other issues. This already made me rethink the idea.
 
-Then, I also found this article called [Medium Was Never Meant to Be a Part of the Developer Ecosystem](https://dev.to/devteam/medium-was-never-meant-to-be-a-part-of-the-developer-ecosystem-25a0), and it made me see how all the Medium restrictions and policies actually makes it harder for us developers to find the information we need.
+Then, I also found this article called [Medium Was Never Meant to Be a Part of the Developer Ecosystem](https://dev.to/devteam/medium-was-never-meant-to-be-a-part-of-the-developer-ecosystem-25a0), and it made me see how all the Medium restrictions and policies actually make it harder for us developers to find the information we need.
 
 After that, I gave up on Medium.
 # OK, Medium is not fit for Developers. But what about the other platforms?
@@ -32,7 +32,7 @@ After reading that, I started to like the idea of having my own blog and using D
 
 Well, I had my experience with WordPress years ago. Setting up a host for it, plus all the trouble for the configuration didn't seem worth it.
 
-Then I remembered GitHub Pages, and the fact that it supports Jekyll. GitHub would provide free hosting, and Jekyll would allow me to blog by simply committing markdown files.
+Then I remembered GitHub Pages and the fact that it supports Jekyll. GitHub would provide free hosting, and Jekyll would allow me to blog by simply committing markdown files.
 
 **Free hosting with custom domain support, plus being able to blog from my IDE?** That sounded really good.
 
