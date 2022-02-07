@@ -6,23 +6,25 @@ tags: career
 og_image: /assets/images/programming-languages.png
 ---
 
+![thinking balloon with multiple programming languages](/assets/images/programming-languages.png)
+
 _When starting a developer career, you might think it’s a good idea to focus and master a particular technology or one small set of technologies. I know that at least I did. But it didn’t take long for me to change my mind._
 
 I started my career as a .Net developer. And at first, I was enjoying the technology, and focusing on it seemed a good idea. But one year later came the first opportunity to change technologies.
 
 The company I worked for had just signed one of their biggest clients, and it was a huge mobile project. With that came an offer to train me in iOS development if I was willing to change technologies.
 
-If it were any other technology, I would have said no. But Apple products in Brazil are expensive, making iOS developers rare and their salaries quite high. So I went for it. That was my first career bump due to technology change.
+If it were any other technology, I would have said no. But Apple products in Brazil are expensive, making iOS developers rare and their salaries quite high. So I went for it. **That was my first career bump due to technology change.**
 
 ![One does not simply become an ios developer in Brazil](/assets/images/ios-developer.jpeg)
 
-After that, I changed projects a few more times, jumping back and forth between iOS and .Net. The more I demonstrated handling both technologies well, the more I had managers requesting me in their projects. And I used that to argue for a promotion. Second career bump, thanks to changing technologies.
+After that, I changed projects a few more times, jumping back and forth between iOS and .Net. The more I demonstrated handling both technologies well, the more I had managers requesting me in their projects. And I used that to argue for a promotion. S**econd career bump, thanks to changing technologies.**
 
 Not long after that, an opportunity to be transferred to Japan was announced.
 
 I applied to it, as well as dozens of my colleagues. So I thought my chances were slim.
 
-But I still managed to be among the selected ones. And when I asked the managers why they picked me, they said “How fast you can navigate between different technologies” was one of the main reasons. And that is the third career change, now a big international transfer from Brazil to Japan.
+But I still managed to be among the selected ones. And when I asked the managers why they picked me, they said “How fast you can navigate between different technologies” was one of the main reasons. **And that is the third career change, now a big international transfer from Brazil to Japan.**
 
 ![When your career choices starts paying off](/assets/images/choices-paying-off.jpeg)
 
