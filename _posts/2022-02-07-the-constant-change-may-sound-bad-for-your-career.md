@@ -18,7 +18,7 @@ If it were any other technology, I would have said no. But Apple products in Bra
 
 ![One does not simply become an ios developer in Brazil](/assets/images/ios-developer.jpeg)
 
-After that, I changed projects a few more times, jumping back and forth between iOS and .Net. The more I demonstrated handling both technologies well, the more I had managers requesting me in their projects. And I used that to argue for a promotion. S**econd career bump, thanks to changing technologies.**
+After that, I changed projects a few more times, jumping back and forth between iOS and .Net. The more I demonstrated handling both technologies well, the more I had managers requesting me in their projects. And I used that to argue for a promotion. **Second career bump, thanks to changing technologies.**
 
 Not long after that, an opportunity to be transferred to Japan was announced.
 
