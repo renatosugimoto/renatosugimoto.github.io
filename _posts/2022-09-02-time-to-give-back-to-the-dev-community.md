@@ -1,6 +1,6 @@
 ---
 title: Time to give back to the Dev community
-excerpt: After eight years in software development, I decided it was time to contribute more to it. And you know what? It feels good. So in this post, I want to share a few ways I found to contribute.
+excerpt: After eight years in software development, I decided it was time to contribute more to the developer community. And you know what? It feels good. So in this post, I want to share a few ways I found to contribute.
 date: 2022-09-02 11:00:00 +0900
 tags: career community
 og_image: /assets/images/people-network.jpg
@@ -8,7 +8,7 @@ og_image: /assets/images/people-network.jpg
 
 ![circles representing people, connected by lines, forming a network](/assets/images/people-network.jpg)
 
-_After eight years in software development, I decided it was time to contribute more to it. And you know what? It feels good. So in this post, I want to share a few ways I found to contribute._
+_After eight years in software development, I decided it was time to contribute more to the developer community. And you know what? It feels good. So in this post, I want to share a few ways I found to contribute._
 
 When I first had this plan, the idea was to write lots of blog posts with many tutorials and "How to" content.
 
