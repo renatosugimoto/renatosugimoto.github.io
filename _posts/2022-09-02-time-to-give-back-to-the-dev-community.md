@@ -32,7 +32,9 @@ On my journey to contribute more, I started to engage more on Twitter. There is 
 
 The people doing the BootCamp formed an impressive big community, and somehow I was in one of their threads. And they were talking about coffee chats. Where they would have quick talks with developers already working in the industry.
 
-So I started to make myself available for those. Quick 15~30 minutes call. And the topics can vary a lot. From how I started, to technologies and skill I think are worth studying,
+So I started to make myself available for those. Quick 15~30 minutes call. And the topics can vary a lot. From how I started, to technologies and skill I think are worth studying.
+
+And those talks were really interesting. Talking with these people eager to start a software development career can give you a real boost to your motivation as well.
 
 # Conclusion (TL;DR)
 
