@@ -32,15 +32,15 @@ On my journey to contribute more, I started to engage more on Twitter. There is 
 
 The people doing the BootCamp formed an impressive big community, and somehow I was in one of their threads. And they were talking about coffee chats. Where they would have quick talks with developers already working in the industry.
 
-So I started to make myself available for those. Quick 15~30 minutes call. And the topics can vary a lot. From how I started, to technologies and skill I think are worth studying.
+So I started to make myself available for those. Quick 15~30 minutes call. And the topics can vary a lot. From how I started, to technologies and skills I think are worth studying.
 
 And those talks were really interesting. Talking with these people eager to start a software development career can give you a real boost to your motivation as well.
 
 # Conclusion (TL;DR)
 
-I believe many devs like me don't know how to start when they want to contribute more to the community. And i hope that with this post you can see that you don't have to answer really complex questions on Stack Overflow, or write tech tutorials (I haven't given up on that one, though).
+I believe many devs like me don't know how to start when they want to contribute more to the community. And i hope that with this post you can see that you don't have to answer really complex questions on Stack Overflow or write tech tutorials (I haven't given up on that one, though).
 
-Here I gave just to simple ideas of how you can easily start contributing without having to commit too much of your time to it. By simple being available for a quick call, or making Stack Overflow questions more clear.
+Here I gave just two simple ideas of how you can easily start contributing without having to commit too much of your time to it. By simply being available for a quick call, or making Stack Overflow questions more clear.
 
 If you have found other ways to do it, please leave your ideas in the comments.
 
