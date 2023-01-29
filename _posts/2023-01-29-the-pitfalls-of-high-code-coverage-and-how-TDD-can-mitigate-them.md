@@ -1,6 +1,6 @@
 ---
 title: The pitfalls of high code coverage and how TDD can mitigate them
-x: High unit test code coverage is often viewed as a key indicator of code quality, but it's important to focus on the quality of the unit tests, not just the code coverage percentage.
+excerpt: High unit test code coverage is often viewed as a key indicator of code quality, but it's important to focus on the quality of the unit tests, not just the code coverage percentage.
 date: 2023-01-29 20:00:00 +0900
 tags: testing quality
 og_image: /assets/images/2023/100-percent-code-coverage.jpg
