@@ -17,7 +17,7 @@ More often than it should, when you look at what is under that report, you will 
 - Tests that deliberately leave out complex parts of the business logic, because writing those can take time, and focused on parts easier to test, like utility functions and data access layers.
 - Test that, at least in the reports, seem to cover business logic, but when you look at the tests you can’t tell what they are testing, so if they fail, you don’t really know why they failed.
 
-Those can give you a false sense of security, when in reality, the most important part of the codebase is not being tested at all. Leading to issues when a change in the business logic breaks the codebase, and the test suit is not able to detect it.
+Those can give you a false sense of security, when in reality, the most important part of the codebase is not being tested at all, leading to issues when a change in the business logic breaks the codebase, and the test suit is not able to detect it.
 
 ### How to avoid those pitfalls?
 
@@ -74,7 +74,7 @@ First, the 100% test coverage was reached by testing only 1 out of at least 5 in
 
 Second, Regex are not easy to understand, especially long expressions. And as the tests are not descriptive enough, if another developer had to change that code later, it would take a while to understand how the validation is done.
 
-### Now lets see how the code could be written differently by applying TDD.
+### Now let's see how the code could be written differently by applying TDD.
 
 Our first requirement is minimum length =8.
 Let's write a test for that:
@@ -96,7 +96,7 @@ function validateNewPassword(newPassword) {
 }
 ```
 
-OK, now second requirement. At least one uppercase letter.
+OK, now the second requirement. At least one uppercase letter.
 Let's write a test for that:
 
 ```javascript
@@ -203,7 +203,7 @@ function validateNewPassword(newPassword) {
 }
 ```
 
-Now we have a validation function that follows the requirements, and is well tested. Additionally, the tests are now more descriptive, so it's easier for other developers to understand how the validation works.
+Now we have a validation function that follows the requirements, and is well-tested. Additionally, the tests are now more descriptive, so it's easier for other developers to understand how the validation works.
 
 But some might say: "look at all those if's, it doesn't look good". Ok, let's rewrite it for readability:
 
