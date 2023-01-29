@@ -22,14 +22,14 @@ title: Renato Sugimoto
 email: renatoks@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Renato Sugimoto personal blog, where he writes about software development, tutorials, and how-tos.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://renatosugimoto.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://renatosugimoto.com' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: renatosugimoto
 github_username: renatosugimoto
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin: "sunrise"
+remote_theme: 'mmistakes/minimal-mistakes@4.22.0'
+minimal_mistakes_skin: 'sunrise'
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -37,7 +37,7 @@ plugins:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -49,32 +49,32 @@ defaults:
       # related: true
 author:
   # name: "Renato Sugimoto"
-  avatar: "/assets/images/bio-photo.jpeg"
-  bio: "Software Engineer" # Note: Markdown is allowed
-  location: "Tokyo"
+  avatar: '/assets/images/bio-photo.jpeg'
+  bio: 'Software Architect | DevOps | Developer | Constant learner' # Note: Markdown is allowed
+  location: 'Tokyo'
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/renatosugimoto"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/renatosugimoto"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/renatosugimoto/"
-    - label: "Dev"
-      icon: "fab fa-fw fa-dev"
-      url: "https://dev.to/renatosugimoto"
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      url: 'https://twitter.com/renatosugimoto'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/renatosugimoto'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/renatosugimoto/'
+    - label: 'Dev'
+      icon: 'fab fa-fw fa-dev'
+      url: 'https://dev.to/renatosugimoto'
 
 social:
   links:
-    - "https://twitter.com/RenatoSugimoto"
-    - "https://www.linkedin.com/in/RenatoSugimoto"
+    - 'https://twitter.com/RenatoSugimoto'
+    - 'https://www.linkedin.com/in/RenatoSugimoto'
 
 analytics:
-  provider: "google-gtag"
+  provider: 'google-gtag'
   google:
-    tracking_id: "G-142E8GCRQR"
+    tracking_id: 'G-142E8GCRQR'
     anonymize_ip: true
 
 timezone: Asia/Tokyo
@@ -82,10 +82,10 @@ timezone: Asia/Tokyo
 repository: renatosugimoto/renatosugimoto.github.io
 
 comments:
-  provider: "utterances"
+  provider: 'utterances'
   utterances:
-    theme: "github-light" # "github-dark"
-    issue_term: "pathname"
+    theme: 'github-light' # "github-dark"
+    issue_term: 'pathname'
 
 tag_archive:
   type: liquid
