@@ -12,12 +12,14 @@ _High unit test code coverage is often viewed as a key indicator of code quality
 
 More often than it should, when you look at what is under that report, you will find poorly written unit tests, with the sole purpose of getting high code coverage.
 
-**The 2 most common problems are:**
+## The 2 most common pitfalls of high code coverage are:
 
 - Tests that deliberately leave out complex parts of the business logic, because writing those can take time, and focused on parts easier to test, like utility functions and data access layers.
 - Test that, at least in the reports, seem to cover business logic, but when you look at the tests you can’t tell what they are testing, so if they fail, you don’t really know why they failed.
 
 Those can give you a false sense of security, when in reality, the most important part of the codebase is not being tested at all. Leading to issues when a change in the business logic breaks the codebase, and the test suit is not able to detect it.
+
+### How to avoid those pitfalls?
 
 **To avoid these pitfalls, it's important to focus on the quality of the unit tests, not just the quantity. Here are a few best practices to follow:**
 
