@@ -49,8 +49,8 @@ defaults:
       # related: true
 author:
   # name: "Renato Sugimoto"
-  avatar: '/assets/images/bio-photo.jpeg'
-  bio: 'Software Architect | DevOps | Developer | Constant learner' # Note: Markdown is allowed
+  avatar: '/assets/images/bio-photo.jpg'
+  bio: 'Software Architect \| DevOps \| Developer \| Constant learner' # Note: Markdown is allowed
   location: 'Tokyo'
   links:
     - label: 'Twitter'
