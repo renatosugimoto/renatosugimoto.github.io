@@ -25,7 +25,7 @@ Those can give you a false sense of security, when in reality, the most importan
 
 - Write tests that cover all aspects of the business logic, including complex parts. This will ensure that the most important parts of the codebase are being tested.
 
-- Use clear and descriptive test names and assertions. This will make it easy to understand what the test is checking for, and why it have failed.
+- Use clear and descriptive test names and assertions. This will make it easy to understand what the test is checking for, and why it has failed.
 
 - Follow Test-Driven Development (TDD) principles. This approach encourages developers to write tests before writing the code, which can help ensure that the code is well-tested from the beginning.
 
@@ -68,11 +68,11 @@ test('invalid password', () => {
 
 Running the test, both tests would pass, and we would have 100% code coverage. Great, right?
 
-Except there are to big problems with that approach.
+Except there are 2 big problems with that approach.
 
 First, the 100% test coverage was reached by testing only 1 out of at least 5 invalid password scenarios.
 
-Second, Regex are not easy to understand, especially long expressions. And as the tests are not descriptive enough, if another developer had to change that code later, it would take a while to understand how the validation is done.
+Second, Regex is not easy to understand, especially long expressions. And as the tests are not descriptive enough, if another developer had to change that code later, it would take a while to understand how the validation is done.
 
 ### Now let's see how the code could be written differently by applying TDD.
 
