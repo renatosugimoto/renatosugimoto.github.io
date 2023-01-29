@@ -65,6 +65,9 @@ author:
     - label: 'Dev'
       icon: 'fab fa-fw fa-dev'
       url: 'https://dev.to/renatosugimoto'
+    - label: 'HackerNoon'
+      icon: 'fab fa-fw fa-external-link'
+      url: 'https://hackernoon.com/u/renatosugimoto'
 
 social:
   links:
