@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "github-pages", ">= 224", group: :jekyll_plugins
+gem "github-pages", ">= 228", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 # # Hello! This is where you manage which Jekyll version is used to run.
 # # When you want to use a different version, change it below, save the
