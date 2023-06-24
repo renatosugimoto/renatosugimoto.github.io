@@ -3,7 +3,7 @@ title: In the Era of AI, Is Human Code Review Still Necessary?
 excerpt: AI is transforming the way we approach problem-solving and decision-making. With the rise of AI-powered tools and automated code analysis, some may wonder if human code review is still necessary. In the next lines I’ll explore 5 reasons why I believe human code review is still important for improving collaboration and code quality.
 date: 2023-06-24 20:00:00 +0900
 tags: quality ai
-og_image: /assets/images/2023/devops.png
+og_image: /assets/images/2023/code-screen.jpg
 ---
 ![Laptop screen with code written on a dark background. Text is out of focus so just a few words can be read.](/assets/images/2023/code-screen.jpg)
 *Image by [fancycrave1](https://pixabay.com/users/fancycrave1-1115284/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=820275) from Pixabay*
