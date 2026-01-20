@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import Comments from '../components/Comments.astro';
 import type { CollectionEntry } from 'astro:content';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -43,5 +44,7 @@ const { title, description, date, updatedDate, heroImage, og_image } = Astro.pro
             prose-img:rounded-xl">
 			<slot />
 		</div>
+        
+        <Comments />
 	</article>
 </BaseLayout>
