@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+).slice(0, 3); // Top 3 recent posts
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<section class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 py-12 md:py-20">
+		<div class="flex-1 space-y-4">
+			<h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+				Hi, I'm Renato.
+			</h1>
+			<p class="text-xl text-zinc-300">
+				System Architect, DevOps Engineer, and Developer.
+			</p>
+			<p class="text-zinc-400 leading-relaxed max-w-prose">
+				I write about software development, share tutorials, and explore new technologies. 
+				Welcome to my digital garden.
+			</p>
+			<div class="pt-4 flex gap-4">
+				<a href="/blog" class="px-6 py-2.5 bg-white text-zinc-950 font-bold rounded-full hover:bg-zinc-200 transition-colors">
+					Read the Blog
+				</a>
+                <a href="https://github.com/renatosugimoto" target="_blank" class="px-6 py-2.5 bg-zinc-800 text-white font-bold rounded-full hover:bg-zinc-700 transition-colors">
+					GitHub
+				</a>
+			</div>
+		</div>
+		<div class="w-48 md:w-64 aspect-square rounded-full overflow-hidden border-4 border-white/5 shadow-2xl relative bg-zinc-800">
+			<!-- Ideally use the avatar from config, hardcoded for now based on known assets -->
+			<img src="/assets/images/bio-photo.jpg" alt="Renato Sugimoto" class="w-full h-full object-cover" />
+		</div>
+	</section>
+
+	<section class="border-t border-white/5 pt-12">
+		<div class="flex items-center justify-between mb-8">
+			<h2 class="text-2xl font-bold">Recent Posts</h2>
+			<a href="/blog" class="text-sm text-emerald-400 hover:text-emerald-300 font-medium">View all &rarr;</a>
+		</div>
+
+		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+			{posts.map((post) => (
+				<a href={`/${post.slug}/`} class="group block bg-zinc-900/50 rounded-2xl overflow-hidden hover:bg-zinc-900 transition-colors border border-white/5 hover:border-white/10 hover-lift">
+					{post.data.heroImage && (
+						<div class="aspect-video overflow-hidden">
+							<img src={post.data.heroImage} alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+						</div>
+					)}
+					<div class="p-6">
+						<div class="text-xs text-zinc-500 mb-2">
+							{post.data.date.toLocaleDateString('en-US', {
+								year: 'numeric',
+								month: 'short',
+								day: 'numeric',
+							})}
+						</div>
+						<h3 class="text-lg font-bold mb-2 group-hover:text-emerald-400 transition-colors">
+							{post.data.title}
+						</h3>
+						<p class="text-sm text-zinc-400 line-clamp-2">
+							{post.data.description || post.data.excerpt}
+						</p>
+					</div>
+				</a>
+			))}
+		</div>
+	</section>
+</BaseLayout>

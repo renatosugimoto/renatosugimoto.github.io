@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-accent: #6db33f; /* Example accent color */
+  --font-family-body: 'Inter', sans-serif;
+  --font-family-heading: 'Outfit', sans-serif;
+}
+
+/* Custom base styles */
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  @apply font-bold tracking-tight text-white;
+}
+
+/* Utility for hover effects */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
