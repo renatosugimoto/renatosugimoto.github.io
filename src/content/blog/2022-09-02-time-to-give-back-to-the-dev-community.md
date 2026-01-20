@@ -1,5 +1,4 @@
 ---
-
 title: Time to give back to the Dev community
 excerpt: After eight years in software development, I decided it was time to contribute more to the developer community. And you know what? It feels good. So in this post, I want to share a few ways I found to contribute.
 date: 2022-09-02 11:00:00 +0900
@@ -24,7 +23,7 @@ My strategy was to go through the list of questions quickly, and answer the ques
 
 After doing that a few times, I noticed that I couldn't answer many questions. Not because the problem was too difficult, but because the question was not clear.
 
-That reminded me of junior developers at work coming to me for support. And how many times I had to ask the junior developer to stop and start again. This time, I would ask the questions to understand the problem better. What are you trying to accomplish?  What have you tried so far?
+That reminded me of junior developers at work coming to me for support. And how many times I had to ask the junior developer to stop and start again. This time, I would ask the questions to understand the problem better. What are you trying to accomplish? What have you tried so far?
 
 With this realization, I could see the real value of the edit and comment features of Stack Overflow. Even if I might not have the answer to the posted problem, I could at least help them make it more clear so other contributors could answer it.
 

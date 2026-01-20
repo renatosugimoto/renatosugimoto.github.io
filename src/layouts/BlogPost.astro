@@ -8,43 +8,49 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, date, updatedDate, heroImage, og_image } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description || ""} image={og_image || heroImage}>
-	<article class="max-w-3xl mx-auto">
-		<div class="mb-8 text-center">
-			<div class="text-zinc-500 mb-2 font-mono text-sm">
-				{date.toLocaleDateString('en-US', {
-					year: 'numeric',
-					month: 'long',
-					day: 'numeric',
-				})}
-				{updatedDate && (
-					<div class="italic">
-						Last updated on {updatedDate.toLocaleDateString('en-US', {
-							year: 'numeric',
-							month: 'long',
-							day: 'numeric',
-						})}
-					</div>
-				)}
-			</div>
-			
-			<h1 class="text-3xl md:text-5xl font-bold mb-6 text-white">{title}</h1>
-			<hr class="border-white/10" />
-		</div>
-        
-        {heroImage && (
-            <div class="mb-8 rounded-2xl overflow-hidden shadow-2xl">
-                <img width={1020} height={510} src={heroImage} alt="" class="w-full object-cover" />
+<BaseLayout title={title} description={description || ''} image={og_image || heroImage}>
+  <article class="mx-auto max-w-3xl">
+    <div class="mb-8 text-center">
+      <div class="mb-2 font-mono text-sm text-zinc-500">
+        {
+          date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })
+        }
+        {
+          updatedDate && (
+            <div class="italic">
+              Last updated on{' '}
+              {updatedDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
             </div>
-        )}
+          )
+        }
+      </div>
 
-		<div class="prose prose-invert prose-zinc max-w-none 
-            prose-headings:font-heading prose-headings:font-bold
-            prose-a:text-emerald-400 prose-a:no-underline hover:prose-a:underline
-            prose-img:rounded-xl">
-			<slot />
-		</div>
-        
-        <Comments />
-	</article>
+      <h1 class="mb-6 text-3xl font-bold text-white md:text-5xl">{title}</h1>
+      <hr class="border-white/10" />
+    </div>
+
+    {
+      heroImage && (
+        <div class="mb-8 overflow-hidden rounded-2xl shadow-2xl">
+          <img width={1020} height={510} src={heroImage} alt="" class="w-full object-cover" />
+        </div>
+      )
+    }
+
+    <div
+      class="prose prose-invert prose-zinc prose-headings:font-heading prose-headings:font-bold prose-a:text-emerald-400 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl max-w-none"
+    >
+      <slot />
+    </div>
+
+    <Comments />
+  </article>
 </BaseLayout>

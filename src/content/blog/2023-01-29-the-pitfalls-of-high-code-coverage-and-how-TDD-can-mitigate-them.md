@@ -1,5 +1,4 @@
 ---
-
 title: The pitfalls of unit test high code coverage and how TDD can mitigate them
 excerpt: High unit test code coverage is often viewed as a key indicator of code quality, but it's important to focus on the quality of the unit tests, not just the code coverage percentage.
 date: 2023-01-29 20:00:00 +0900
@@ -51,8 +50,8 @@ After finding the regex they want on Google they will write a function like this
 function validateNewPassword(newPassword) {
   let passwordRegex = new RegExp(
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
-  )
-  return passwordRegex.test(newPassword)
+  );
+  return passwordRegex.test(newPassword);
 }
 ```
 
@@ -60,12 +59,12 @@ Then, time for the unit tests:
 
 ```javascript
 test('valid password', () => {
-  expect(validateNewPassword('Abcdefg1!')).toBe(true)
-})
+  expect(validateNewPassword('Abcdefg1!')).toBe(true);
+});
 
 test('invalid password', () => {
-  expect(validateNewPassword('Abcdefgh1')).toBe(false)
-})
+  expect(validateNewPassword('Abcdefgh1')).toBe(false);
+});
 ```
 
 Running the test, both tests would pass, and we would have 100% code coverage. Great, right?
@@ -83,8 +82,8 @@ Let's write a test for that:
 
 ```javascript
 test('password minimum length', () => {
-  expect(validateNewPassword('a'.repeat(7))).toBe(false)
-})
+  expect(validateNewPassword('a'.repeat(7))).toBe(false);
+});
 ```
 
 And we start the implementation by applying just making that first test pass:
@@ -92,9 +91,9 @@ And we start the implementation by applying just making that first test pass:
 ```javascript
 function validateNewPassword(newPassword) {
   if (newPassword.length < 8) {
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 ```
 
@@ -103,8 +102,8 @@ Let's write a test for that:
 
 ```javascript
 test('password must contain at least one uppercase letter', () => {
-  expect(validateNewPassword('abcdefgh1!')).toBe(false)
-})
+  expect(validateNewPassword('abcdefgh1!')).toBe(false);
+});
 ```
 
 To make this test pass, we can add a check for uppercase letters in our validation function:
@@ -112,12 +111,12 @@ To make this test pass, we can add a check for uppercase letters in our validati
 ```javascript
 function validateNewPassword(newPassword) {
   if (newPassword.length < 8) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[A-Z]/)) {
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 ```
 
@@ -125,8 +124,8 @@ Now, lowercase letters:
 
 ```javascript
 test('password must contain at least one lowercase letter', () => {
-  expect(validateNewPassword('ABCDEFGH1!')).toBe(false)
-})
+  expect(validateNewPassword('ABCDEFGH1!')).toBe(false);
+});
 ```
 
 And we add the lowercase validation to our validation function:
@@ -134,15 +133,15 @@ And we add the lowercase validation to our validation function:
 ```javascript
 function validateNewPassword(newPassword) {
   if (newPassword.length < 8) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[A-Z]/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[a-z]/)) {
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 ```
 
@@ -150,8 +149,8 @@ Next, let's move on to the next requirement: at least one digit.
 
 ```javascript
 test('password must contain at least one digit', () => {
-  expect(validateNewPassword('Abcdefgh!')).toBe(false)
-})
+  expect(validateNewPassword('Abcdefgh!')).toBe(false);
+});
 ```
 
 To make this test pass, we can add a check for digits in our validation function:
@@ -159,18 +158,18 @@ To make this test pass, we can add a check for digits in our validation function
 ```javascript
 function validateNewPassword(newPassword) {
   if (newPassword.length < 8) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[A-Z]/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[a-z]/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/\d/)) {
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 ```
 
@@ -178,8 +177,8 @@ Finally, let's test for the last requirement: at least one special symbol.
 
 ```javascript
 test('password must contain at least one special symbol', () => {
-  expect(validateNewPassword('Abcdefgh1')).toBe(false)
-})
+  expect(validateNewPassword('Abcdefgh1')).toBe(false);
+});
 ```
 
 To make this test pass, we can add a check for special symbols in our validation function:
@@ -187,21 +186,21 @@ To make this test pass, we can add a check for special symbols in our validation
 ```javascript
 function validateNewPassword(newPassword) {
   if (newPassword.length < 8) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[A-Z]/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[a-z]/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/\d/)) {
-    return false
+    return false;
   }
   if (!newPassword.match(/[@$!%*?&]/)) {
-    return false
+    return false;
   }
-  return true
+  return true;
 }
 ```
 
@@ -210,10 +209,10 @@ Now we have a validation function that follows the requirements, and is well-tes
 But some might say: "look at all those if's, it doesn't look good". Ok, let's rewrite it for readability:
 
 ```javascript
-const LOWERCASE_REGEX = /[a-z]/
-const UPPERCASE_REGEX = /[A-Z]/
-const DIGIT_REGEX = /\d/
-const SPECIAL_CHAR_REGEX = /[@$!%*?&]/
+const LOWERCASE_REGEX = /[a-z]/;
+const UPPERCASE_REGEX = /[A-Z]/;
+const DIGIT_REGEX = /\d/;
+const SPECIAL_CHAR_REGEX = /[@$!%*?&]/;
 
 function validateNewPassword(newPassword) {
   return (
@@ -222,7 +221,7 @@ function validateNewPassword(newPassword) {
     UPPERCASE_REGEX.test(newPassword) &&
     DIGIT_REGEX.test(newPassword) &&
     SPECIAL_CHAR_REGEX.test(newPassword)
-  )
+  );
 }
 ```
 
@@ -232,30 +231,30 @@ And our unit test file would look like this:
 describe('Password validation', () => {
   test('password minimum length is 8 characters', () => {
     // refactored after the first example to make sure the only reason for the test to fail is the length
-    expect(validateNewPassword('Abcde1!')).toBe(false)
-    expect(validateNewPassword('Abcdef1!')).toBe(true)
-  })
+    expect(validateNewPassword('Abcde1!')).toBe(false);
+    expect(validateNewPassword('Abcdef1!')).toBe(true);
+  });
 
   test('password must contain at least 1 uppercase letter', () => {
-    expect(validateNewPassword('abcdefgh1!')).toBe(false)
-    expect(validateNewPassword('Abcdefgh1!')).toBe(true)
-  })
+    expect(validateNewPassword('abcdefgh1!')).toBe(false);
+    expect(validateNewPassword('Abcdefgh1!')).toBe(true);
+  });
 
   test('password must contain at least 1 lowercase letter', () => {
-    expect(validateNewPassword('ABCDEFGH1!')).toBe(false)
-    expect(validateNewPassword('AbCdefgh1!')).toBe(true)
-  })
+    expect(validateNewPassword('ABCDEFGH1!')).toBe(false);
+    expect(validateNewPassword('AbCdefgh1!')).toBe(true);
+  });
 
   test('password must contain at least 1 digit', () => {
-    expect(validateNewPassword('Abcdefgh!')).toBe(false)
-    expect(validateNewPassword('Abcdefgh1!')).toBe(true)
-  })
+    expect(validateNewPassword('Abcdefgh!')).toBe(false);
+    expect(validateNewPassword('Abcdefgh1!')).toBe(true);
+  });
 
   test('password must contain at least 1 special symbol', () => {
-    expect(validateNewPassword('Abcdefgh1')).toBe(false)
-    expect(validateNewPassword('Abcdefgh1!')).toBe(true)
-  })
-})
+    expect(validateNewPassword('Abcdefgh1')).toBe(false);
+    expect(validateNewPassword('Abcdefgh1!')).toBe(true);
+  });
+});
 ```
 
 By following these best practices, not only you can ensure that your unit test code coverage is an accurate indicator of code quality, and that your business logic is well-covered. But you can also improve the maintainability and readability of your code.

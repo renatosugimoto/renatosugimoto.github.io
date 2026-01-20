@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 @theme {
   --color-accent: #6db33f; /* Example accent color */
@@ -9,10 +9,15 @@
 
 /* Custom base styles */
 body {
-  @apply bg-zinc-950 text-zinc-100 antialiased font-sans;
+  @apply bg-zinc-950 font-sans text-zinc-100 antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-heading);
   @apply font-bold tracking-tight text-white;
 }

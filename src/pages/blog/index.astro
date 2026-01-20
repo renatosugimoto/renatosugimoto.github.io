@@ -4,35 +4,40 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
 <BaseLayout title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION}>
-	<div class="max-w-3xl mx-auto">
-		<h1 class="text-3xl font-bold mb-8">All Posts</h1>
-		<div class="space-y-8">
-			{posts.map((post) => (
-				<article class="flex flex-col md:flex-row gap-6 md:items-center group">
-					<div class="md:w-1/4 text-zinc-500 text-sm md:text-right font-mono">
-						{post.data.date.toLocaleDateString('en-US', {
-							year: 'numeric',
-							month: 'short',
-							day: 'numeric',
-						})}
-					</div>
-					<div class="flex-1">
-						<a href={`/${post.slug}/`} class="block group-hover:translate-x-1 transition-transform">
-							<h2 class="text-xl font-bold mb-1 group-hover:text-emerald-400 transition-colors">
-								{post.data.title}
-							</h2>
-							<p class="text-zinc-400 text-sm line-clamp-2">
-								{post.data.description || post.data.excerpt}
-							</p>
-						</a>
-					</div>
-				</article>
-			))}
-		</div>
-	</div>
+  <div class="mx-auto max-w-3xl">
+    <h1 class="mb-8 text-3xl font-bold">All Posts</h1>
+    <div class="space-y-8">
+      {
+        posts.map((post) => (
+          <article class="group flex flex-col gap-6 md:flex-row md:items-center">
+            <div class="font-mono text-sm text-zinc-500 md:w-1/4 md:text-right">
+              {post.data.date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+              })}
+            </div>
+            <div class="flex-1">
+              <a
+                href={`/${post.slug}/`}
+                class="block transition-transform group-hover:translate-x-1"
+              >
+                <h2 class="mb-1 text-xl font-bold transition-colors group-hover:text-emerald-400">
+                  {post.data.title}
+                </h2>
+                <p class="line-clamp-2 text-sm text-zinc-400">
+                  {post.data.description || post.data.excerpt}
+                </p>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
 </BaseLayout>

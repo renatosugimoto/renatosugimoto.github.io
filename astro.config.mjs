@@ -7,9 +7,9 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
   site: 'https://renatosugimoto.com',
-  integrations: [sitemap()]
+  integrations: [sitemap()],
 });

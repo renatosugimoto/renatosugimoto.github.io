@@ -1,5 +1,4 @@
 ---
-
 title: Are your CICD and DevOps tools really making developers' lives easier?
 excerpt: If you are responsible for your team’s CICD and DevOps tools, have you ever asked yourself if the tools you built are really making developers' lives easier? Or are they there just to reinforce the rules you've set?
 date: 2023-02-10 00:00:00 +0900
@@ -7,15 +6,16 @@ tags: devops cicd
 og_image: /assets/images/2023/devops.png
 slug: 2023/02/10/are-your-cicd-tools-making-devs-lives-easier
 ---
+
 ![infinity symbol with the words plan, implement, integrate, test, release, configure, monitor and analyze written in it.](/assets/images/2023/devops.png)
 
-*If you are responsible for your team’s CICD and DevOps tools, have you ever asked yourself if the tools you built are really making developers' lives easier? Or are they there just to reinforce the rules you've set?*
+_If you are responsible for your team’s CICD and DevOps tools, have you ever asked yourself if the tools you built are really making developers' lives easier? Or are they there just to reinforce the rules you've set?_
 
 **It's your responsibility to make sure the tools and procedures you've implemented are truly helping software developers do their job.**
 
 After setting your CICD tools, how frequently have you asked the developers for feedback? How many times have you changed/updated those based on feedback from the developers? Or are all your changes to support new requirements, infrastructure, and analysis tools?
 
-You might think: *“My tools are running code analysis, and automated tests, so they are helping the developers catch errors early.”*. But are they?
+You might think: _“My tools are running code analysis, and automated tests, so they are helping the developers catch errors early.”_. But are they?
 
 I've discovered that one of the major reasons for bugs in many of my projects is that developers only test their code locally. My usual response to that was asking my team **“Why aren’t you deploying to the dev environment to test it?”.** And that would improve things for a while, then the same problem would come back.
 

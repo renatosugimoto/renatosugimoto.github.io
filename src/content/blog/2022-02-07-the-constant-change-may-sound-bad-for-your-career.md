@@ -1,5 +1,4 @@
 ---
-
 title: The constant change of technologies may sound bad for your career, but it can actually help you.
 excerpt: When starting a developer career, you might think it’s a good idea to focus and master a particular technology or one small set of technologies. I know that at least I did. But it didn’t take long for me to change my mind.
 date: 2022-02-07 23:00:29 +0900
