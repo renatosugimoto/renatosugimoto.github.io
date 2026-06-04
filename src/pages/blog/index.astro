@@ -24,7 +24,7 @@ const posts = (await getCollection('blog')).sort(
             </div>
             <div class="flex-1">
               <a
-                href={`/${post.slug}/`}
+                href={`/${post.id}/`}
                 class="block transition-transform group-hover:translate-x-1"
               >
                 <h2 class="mb-1 text-xl font-bold transition-colors group-hover:text-emerald-400">

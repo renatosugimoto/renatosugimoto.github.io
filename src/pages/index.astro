@@ -61,7 +61,7 @@ const posts = (await getCollection('blog'))
       {
         posts.map((post) => (
           <a
-            href={`/${post.slug}/`}
+            href={`/${post.id}/`}
             class="group hover-lift block overflow-hidden rounded-2xl border border-white/5 bg-zinc-900/50 transition-colors hover:border-white/10 hover:bg-zinc-900"
           >
             {post.data.heroImage && (
